@@ -1,0 +1,127 @@
+:root {
+    --vermelho: #E50914;
+    --preto:#141414;
+    --branco: #ffffff;
+    --cinza: #AAAAAA;
+
+}
+
+body {
+    background: var(--preto);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--preto);
+    padding: .3rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 2.5rem;
+    font-family: "Arial Black";
+    padding-right: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container nav a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cinza);
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+.container nav a:hover {
+    color: var(--branco);
+}
+
+/* MAIN */
+
+.home {
+    background:linear-gradient(rgba(0,0,0.50),rgba(0,0,0,.50)100%), url(/assets/img/Stranger-things-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.home .container {
+    margin-left: 20px;
+}
+
+.home .botoes {
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-top: 15%;
+    color: var(--branco);
+    font-size: 5rem;
+    font-family: "Roboto Condensed";
+}
+
+.container .descricao {
+    color: var(--branco);
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.botao {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: rgba(0,0,0,.50);
+    padding: 20px;
+    color: var(--branco);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: var(--branco);
+    color: var(--preto);
+    transition: .5s ease-in all;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.box-filme {
+    height: 90%;
+    width: 90%;
+    display: block;
+}
+
+.titulo-carrousel {
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 20px;
+}
